@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Dulce Vis Cofetărie Cahul</title>
+  <meta name="description" content="Contactează Dulce Vis pentru comenzi și informații. Adresă: str. Victoriei 12, Cahul. Telefon: +373 60 123 456. Formular de contact online.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dulce <span>Vis</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Meniu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Produse</a></li>
+        <li class="nav-item"><a class="nav-link" href="custom-cake.html">Comandă Tort</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <h1>Contactează-ne</h1>
+    <p>Suntem aici să-ți răspundem și să-ți pregătim dulciurile visate</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Formular -->
+      <div class="col-lg-7">
+        <h2 class="section-title">Trimite-ne un mesaj</h2>
+        <div class="divider" style="margin-left:0;"></div>
+
+        <div id="alertaSucces" class="alerta-succes mb-4" role="alert">
+          <i class="fas fa-check-circle me-2"></i>Mesajul a fost trimis! Vă vom contacta în cel mai scurt timp.
+        </div>
+
+        <form id="formContact" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" for="nume">Nume complet *</label>
+              <input type="text" class="form-control" id="nume" placeholder="Ion Popescu" required>
+              <div class="invalid-feedback">Introduceți un nume valid (minim 3 caractere)</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="email">Email *</label>
+              <input type="email" class="form-control" id="email" placeholder="ion@email.com" required>
+              <div class="invalid-feedback">Introduceți un email valid</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="telefon">Telefon *</label>
+              <input type="tel" class="form-control" id="telefon" placeholder="+373 60 000 000" required>
+              <div class="invalid-feedback">Introduceți un număr de telefon valid</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="tipComanda">Tip comandă</label>
+              <select class="form-select" id="tipComanda">
+                <option value="">Selectează tipul</option>
+                <option>Tort de nuntă</option>
+                <option>Tort de aniversare</option>
+                <option>Tort personalizat</option>
+                <option>Macarons</option>
+                <option>Prăjituri asortate</option>
+                <option>Altele</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="mesaj">Mesaj *</label>
+              <textarea class="form-control" id="mesaj" rows="5" 
+                        placeholder="Descrie comanda ta sau adresează-ne o întrebare..." required></textarea>
+              <div class="invalid-feedback">Mesajul trebuie să conțină cel puțin 10 caractere</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-roz">
+                <i class="fas fa-paper-plane me-2"></i>Trimite mesajul
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info contact -->
+      <div class="col-lg-5">
+        <h2 class="section-title">Informații contact</h2>
+        <div class="divider" style="margin-left:0;"></div>
+
+        <div class="d-flex gap-3 mb-4">
+          <div class="avantaj-icon" style="min-width:50px; width:50px; height:50px; font-size:1.2rem;">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:700; color:var(--maro); font-size:1rem;">Adresa</h4>
+            <p style="color:var(--gri); margin:0;">str. Victoriei 12, Cahul<br>Republica Moldova, MD-3901</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 mb-4">
+          <div class="avantaj-icon" style="min-width:50px; width:50px; height:50px; font-size:1.2rem;">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:700; color:var(--maro); font-size:1rem;">Telefon</h4>
+            <p style="color:var(--gri); margin:0;">
+              <a href="tel:+37360123456" style="color:var(--roz); font-weight:600; text-decoration:none;">+373 60 123 456</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 mb-4">
+          <div class="avantaj-icon" style="min-width:50px; width:50px; height:50px; font-size:1.2rem;">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:700; color:var(--maro); font-size:1rem;">Email</h4>
+            <p style="color:var(--gri); margin:0;">
+              <a href="mailto:info@dulcevis.md" style="color:var(--roz); font-weight:600; text-decoration:none;">info@dulcevis.md</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 mb-4">
+          <div class="avantaj-icon" style="min-width:50px; width:50px; height:50px; font-size:1.2rem;">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h4 style="font-weight:700; color:var(--maro); font-size:1rem;">Program</h4>
+            <p style="color:var(--gri); margin:0;">
+              Luni – Vineri: 8:00 – 20:00<br>
+              Sâmbătă – Duminică: 9:00 – 18:00
+            </p>
+          </div>
+        </div>
+
+        <!-- Social media -->
+        <h4 style="font-weight:700; color:var(--maro); margin-bottom:1rem;">Urmărește-ne</h4>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-icon" style="background:var(--crem-inchis); color:var(--maro);" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" style="background:var(--crem-inchis); color:var(--maro);" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" style="background:var(--crem-inchis); color:var(--maro);" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" class="social-icon" style="background:var(--crem-inchis); color:var(--maro);" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- HARTA -->
+    <div class="mt-5">
+      <h2 class="section-title text-center">Găsește-ne pe hartă</h2>
+      <div class="divider"></div>
+      <div class="harta-container">
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=28.1700%2C45.8900%2C28.2200%2C45.9200&layer=mapnik&marker=45.9071%2C28.1948"
+          title="Harta localizare Dulce Vis Cahul"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">Dulce Vis</div>
+        <p style="color:rgba(255,255,255,0.7);">Cofetărie artizanală cu dragoste pentru dulciuri.</p>
+        <div class="mt-3">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <h6 style="font-weight:700; margin-bottom:1rem; color:var(--roz);">Pagini</h6>
+        <ul style="list-style:none; padding:0;">
+          <li class="mb-2"><a href="index.html">Acasă</a></li>
+          <li class="mb-2"><a href="products.html">Produse</a></li>
+          <li class="mb-2"><a href="custom-cake.html">Comandă Tort</a></li>
+          <li class="mb-2"><a href="gallery.html">Galerie</a></li>
+          <li class="mb-2"><a href="about.html">Despre noi</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <h6 style="font-weight:700; margin-bottom:1rem; color:var(--roz);">Contact</h6>
+        <p style="color:rgba(255,255,255,0.7);">
+          <i class="fas fa-map-marker-alt me-2" style="color:var(--roz)"></i>str. Victoriei 12, Cahul<br>
+          <i class="fas fa-phone me-2 mt-2" style="color:var(--roz)"></i>+373 60 123 456<br>
+          <i class="fas fa-envelope me-2 mt-2" style="color:var(--roz)"></i>info@dulcevis.md
+        </p>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,0.2);">
+    <p class="text-center" style="color:rgba(255,255,255,0.5); font-size:0.9rem;">© 2026 Dulce Vis. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/validation.js" defer></script>
+</body>
+</html>

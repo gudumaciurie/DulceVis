@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produse – Dulce Vis Cofetărie</title>
+  <meta name="description" content="Descoperă toată gama de produse Dulce Vis: torturi, prăjituri, macarons și biscuiți artizanali. Filtrează și comandă online.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dulce <span>Vis</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Meniu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Produse</a></li>
+        <li class="nav-item"><a class="nav-link" href="custom-cake.html">Comandă Tort</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <h1>Produsele noastre</h1>
+    <p>Descoperă dulciurile artizanale pregătite cu drag</p>
+  </div>
+</div>
+
+<!-- PRODUSE -->
+<section class="section">
+  <div class="container">
+
+    <!-- Filtrare & Sortare -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+      <div class="d-flex flex-wrap gap-2">
+        <button class="filtru-btn activ" data-cat="toate">Toate</button>
+        <button class="filtru-btn" data-cat="torturi">🎂 Torturi</button>
+        <button class="filtru-btn" data-cat="prajituri">🍰 Prăjituri</button>
+        <button class="filtru-btn" data-cat="macarons">🫐 Macarons</button>
+        <button class="filtru-btn" data-cat="biscuiti">🍪 Biscuiți</button>
+      </div>
+      <div>
+        <select id="sortare" class="form-select" style="min-width:180px;" aria-label="Sortează produse">
+          <option value="default">Sortare implicită</option>
+          <option value="pret-asc">Preț: Mic → Mare</option>
+          <option value="pret-desc">Preț: Mare → Mic</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Grid produse -->
+    <div class="row g-4" id="gridProduse">
+
+      <!-- TORTURI -->
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="torturi" data-pret="350">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Tort cu flori naturale">
+          <div class="card-body">
+            <span class="categorie">Torturi</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Tort Floral cu Frișcă</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Frișcă naturală, flori comestibile, blat de vanilie</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">350 MDL</span>
+              <a href="custom-cake.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="torturi" data-pret="420">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80" alt="Tort ciocolata cu ganache">
+          <div class="card-body">
+            <span class="categorie">Torturi</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Tort Ciocolată Belgiană</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Ganache din ciocolată belgiana 70%, glazura oglindă</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">420 MDL</span>
+              <a href="custom-cake.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="torturi" data-pret="380">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&q=80" alt="Tort capsuni frisca">
+          <div class="card-body">
+            <span class="categorie">Torturi</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Tort Căpșuni & Frișcă</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Blat pufos, strat generos de frișcă și căpșuni proaspete</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">380 MDL</span>
+              <a href="custom-cake.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="torturi" data-pret="500">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=400&q=80" alt="Tort personalizat nunta">
+          <div class="card-body">
+            <span class="categorie">Torturi</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Tort de Nuntă</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Tort personalizat pe 3 etaje, decorat cu fondant</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">500+ MDL</span>
+              <a href="custom-cake.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRĂJITURI -->
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="prajituri" data-pret="120">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&q=80" alt="Plăcintă cu mere">
+          <div class="card-body">
+            <span class="categorie">Prăjituri</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Plăcintă cu Mere</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Rețetă tradițională cu mere soiuri locale și scorțișoară</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">120 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="prajituri" data-pret="150">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&q=80" alt="Briose cu afine">
+          <div class="card-body">
+            <span class="categorie">Prăjituri</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Brioșe cu Afine (6 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Brioșe pufoase cu afine proaspete și glazură de zahăr</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">150 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="prajituri" data-pret="95">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Tiramisu clasic">
+          <div class="card-body">
+            <span class="categorie">Prăjituri</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Tiramisu Clasic</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Rețetă italiană autentică cu mascarpone și espresso</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">95 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MACARONS -->
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="macarons" data-pret="180">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400&q=80" alt="Macarons colorati asortati">
+          <div class="card-body">
+            <span class="categorie">Macarons</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Macarons Asortați (12 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Vanilie, ciocolată, căpșuni, lămâie, fistic, zmeură</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">180 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="macarons" data-pret="100">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1519869325930-281384150729?w=400&q=80" alt="Macarons roz capsuni">
+          <div class="card-body">
+            <span class="categorie">Macarons</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Macarons Căpșuni (6 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Cremă intensă de căpșuni proaspete, coajă crocantă</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">100 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BISCUIȚI -->
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="biscuiti" data-pret="80">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&q=80" alt="Biscuiti cu unt si ciocolata">
+          <div class="card-body">
+            <span class="categorie">Biscuiți</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Biscuiți cu Unt (10 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Biscuiți fragezi cu unt și chips de ciocolată</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">80 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="biscuiti" data-pret="120">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&q=80" alt="Biscuiti glazurati decorati">
+          <div class="card-body">
+            <span class="categorie">Biscuiți</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Biscuiți Glazurați (8 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Decorați manual cu glazură royale colorată</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">120 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 produs-item" data-cat="biscuiti" data-pret="60">
+        <div class="card-produs">
+          <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=400&q=80" alt="Biscuiti ovaz cu stafide">
+          <div class="card-body">
+            <span class="categorie">Biscuiți</span>
+            <h2 style="font-size:1.1rem; font-weight:700; margin-bottom:6px;">Biscuiți cu Ovăz (12 buc)</h2>
+            <p style="color:var(--gri); font-size:0.85rem; margin-bottom:12px;">Cu ovăz, miere naturală și stafide, fără zahăr adăugat</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="pret">60 MDL</span>
+              <a href="contact.html" class="btn-roz" style="padding:8px 16px; font-size:0.85rem;">Comandă</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">Dulce Vis</div>
+        <p style="color:rgba(255,255,255,0.7);">Cofetărie artizanală cu dragoste pentru dulciuri.</p>
+        <div class="mt-3">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <h6 style="font-weight:700; margin-bottom:1rem; color:var(--roz);">Pagini</h6>
+        <ul style="list-style:none; padding:0;">
+          <li class="mb-2"><a href="index.html">Acasă</a></li>
+          <li class="mb-2"><a href="products.html">Produse</a></li>
+          <li class="mb-2"><a href="custom-cake.html">Comandă Tort</a></li>
+          <li class="mb-2"><a href="gallery.html">Galerie</a></li>
+          <li class="mb-2"><a href="about.html">Despre noi</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <h6 style="font-weight:700; margin-bottom:1rem; color:var(--roz);">Contact</h6>
+        <p style="color:rgba(255,255,255,0.7);">
+          <i class="fas fa-map-marker-alt me-2" style="color:var(--roz)"></i>str. Victoriei 12, Cahul<br>
+          <i class="fas fa-phone me-2 mt-2" style="color:var(--roz)"></i>+373 60 123 456
+        </p>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,0.2);">
+    <p class="text-center" style="color:rgba(255,255,255,0.5); font-size:0.9rem;">© 2026 Dulce Vis. Toate drepturile rezervate.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Înapoi sus"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="js/main.js" defer></script>
+<script defer>
+// Filtrare produse
+document.querySelectorAll('.filtru-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const cat = this.dataset.cat;
+    document.querySelectorAll('.filtru-btn').forEach(b => b.classList.remove('activ'));
+    this.classList.add('activ');
+    document.querySelectorAll('.produs-item').forEach(item => {
+      item.style.display = (cat === 'toate' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+  });
+});
+
+// Sortare dupa pret
+document.getElementById('sortare').addEventListener('change', function() {
+  const grid = document.getElementById('gridProduse');
+  const items = Array.from(grid.querySelectorAll('.produs-item'));
+  items.sort((a, b) => {
+    const pA = parseInt(a.dataset.pret), pB = parseInt(b.dataset.pret);
+    if (this.value === 'pret-asc') return pA - pB;
+    if (this.value === 'pret-desc') return pB - pA;
+    return 0;
+  });
+  items.forEach(item => grid.appendChild(item));
+});
+</script>
+</body>
+</html>

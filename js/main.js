@@ -49,7 +49,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
-
+//o iau
 // ===== ACTIVE NAV LINK =====
 const pagina = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-link').forEach(link => {

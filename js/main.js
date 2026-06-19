@@ -18,6 +18,9 @@ const testimoniale = document.querySelectorAll('.testimonial-card');
 const doturi = document.querySelectorAll('.dot');
 let indexCurent = 0;
 
+function afiseazxa (){
+  
+}
 function afiseazaTestimonial(index) {
   testimoniale.forEach(t => t.classList.remove('activ'));
   doturi.forEach(d => d.classList.remove('activ'));
